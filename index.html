@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .error {
+            color: rgb(109, 8, 8);
+            font-size: 0.9em;
+            display: none;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to our Website</h1>
+    <form action="videoPage.html">
+        <div class="Login-form">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" placeholder="Enter Username" name="username" required oninput="validateUsername()"><br>
+            <span id="usernameError" class="error">Username can only contain a-zA-Z0-9 characters.</span>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="Enter password" name="password" required oninput="validatePassword()"><br>
+            <span id="passwordError" class="error">Password must contain at least one uppercase letter, one lowercase letter, and one number.</span><br>
+            <button type="submit">
+                Login
+            </button><br>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>  
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

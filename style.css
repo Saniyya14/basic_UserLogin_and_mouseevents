@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+.Login-form {
+    background-image: linear-gradient(to bottom right, #e6c5aa93, #a58764a8);
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    
+    
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: #0b055a; 
+    }
+}
+
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    
+}
+
+
+.Login-form label, .Login-form input, .Login-form button, .Login-form label input[type="checkbox"] {
+    
+    margin-left: 60px;
+    margin-bottom: 8px;
+}
+
+input[type="text"]{
+    width: 60%;
+    height: 20px;
+}
+
+input[type="text"]:hover {
+
+    border-color: rgb(75, 50, 3); /* Change border color on hover */
+    
+  }
+
+  input[type="password"]{
+    width: 60%;
+    height: 20px;
+  }
+
+  input[type="password"]:hover {
+
+    border-color: rgb(75, 50, 3); /* Change border color on hover */
+  
+  }
+
+  button {
+    background-color: #311305;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e9ce9b;
+    color: #0b012c;
+}

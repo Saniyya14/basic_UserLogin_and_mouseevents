@@ -1,0 +1,113 @@
+.heading {
+  display: block;
+  margin-left: 435px;
+  margin-right: auto;
+  width: 40%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  transition: font-size 0.5s ease-out;
+  background-color: #e4d9b749;
+}
+
+h1:hover {
+  font-size: 60px;
+  background-color: #fefeff;
+}
+
+body {
+  background-color: #b7d2e449;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.video-container {
+  display: flex; /* Use flexbox for alignment */
+  align-items: stretch; /* Stretch items to full height */
+  justify-content: flex-start; /* Align items to start */
+  width: 40%; /* Set a default width */
+  margin: 0 auto; /* Center the container */
+  position: relative; /* Needed for positioning of child elements */
+  height: 80%;
+}
+
+.video {
+  position: relative; /* For positioning popup */
+  overflow: hidden; /* Prevent overflow */
+  width: 80%;
+  height: 80%;
+}
+
+iframe {
+  width: 100%; /* Fill the parent container */
+  height: 100%;
+}
+
+
+#video-popup {
+  display: none; /* Hide initially */
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(36, 18, 2, 0.7); /* Semi-transparent black background */
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 1; /* Ensure popup is displayed above other elements */
+}
+
+.resizer {
+  width: 10px; /* Width of the resizer */
+  background-color: gray; /* Color of the resizer */
+  cursor: ew-resize; /* Change cursor to indicate resizing */
+  height: auto; /* Full height of the video */
+}
+
+.recommended {
+  display: block;
+  margin-left: 30%;
+  margin-right: auto;
+  width: 40%;
+  position: relative;
+}
+
+.Logoutbtn {
+  position: absolute;
+  top: 20px; 
+  right: 20px; 
+  background-color: rgb(145, 12, 12);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.Logoutbtn:hover {
+  background-color: #ffffff;
+  color: #490303; 
+}
+
+.star-rating {
+  display: inline-block;
+  margin-left: 5px;
+  color: gold;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  position: relative;
+}
+
+th, td {
+  border: 1px solid #241b1b;
+  border-radius: 10px;
+  padding: 10px;
+}
